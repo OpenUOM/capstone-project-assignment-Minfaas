@@ -19,7 +19,6 @@ const bodyParser = require  ("body-parser");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-
 app.get("/dbinitialize", async function (req, res) {
   console.log("DB is getting initialized");
   let data = await dbinitialize();
