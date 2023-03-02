@@ -5,7 +5,7 @@ fixture`Testing Teacher UI`
     .page`http://localhost:4401/`
 
 test('Testing add teachers', async t => {
-    await t.navigateTo("/dbinitialize");
+     await t.navigateTo("/dbinitialize", { retryTestPages: true });
 
     await t.navigateTo("/addTeacher");
     await t.typeText("#teacher-id", "123456");
