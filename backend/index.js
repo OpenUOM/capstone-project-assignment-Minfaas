@@ -3,7 +3,7 @@ const server  = require ("./server.js");
 if(process.env.NODE_ENV === "test"){
   server.listen(4401, () => {
     console.log(
-      "Capstone Project Backend is running on http://localhost:4401"
+      "Capstone Project Backend is running on http://127.0.0.1:4401"
     );
   });
 }else{
