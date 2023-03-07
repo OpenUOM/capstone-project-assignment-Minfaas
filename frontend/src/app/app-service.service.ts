@@ -13,7 +13,7 @@ export class AppServiceService {
     if(environment.production == false){
       this.ROOT_URL = 'http://127.0.0.1:8080'
     }else{
-      this.ROOT_URL = 'http://127.0.0.1:4401'
+      this.ROOT_URL = 'api'
     }
   }
 
